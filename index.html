@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dawg4037 — networking, security, self-hosting</title>
+<meta name="description" content="Personal site of dawg4037. Networking, privacy, self-hosting, and a rack in the closet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/">
+      <span class="wordmark-name">dawg4037</span>
+      <span class="wordmark-sub">Personal Infrastructure</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="whatiuse/">What I Use</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO: THE FACEPLATE ============ -->
+  <section class="hero">
+    <div class="wrap">
+
+      <p class="eyebrow">Rev. 3 &nbsp;·&nbsp; Palm Harbor, FL &nbsp;·&nbsp; Status: <span class="status-ok">operational</span></p>
+
+      <h1 class="hero-title">
+        I run the network,<br>
+        <em>and I read the manual.</em>
+      </h1>
+
+      <p class="hero-lede">
+        Networking, security, and self-hosting — done on real hardware I own, in a closet I can
+        physically walk to. This site documents what I build, what I break, and what I learn
+        putting it back together.
+      </p>
+
+      <!-- Signature element: rack faceplate -->
+      <div class="faceplate" role="img" aria-label="Illustration: a rack-mounted device faceplate labelled dawg4037, with six ports representing areas of focus.">
+        <span class="screw screw-tl"></span>
+        <span class="screw screw-bl"></span>
+        <span class="screw screw-tr"></span>
+        <span class="screw screw-br"></span>
+
+        <div class="faceplate-brand">
+          <span class="fp-model">DAWG-4037</span>
+          <span class="fp-class">Managed Human · 1U</span>
+        </div>
+
+        <div class="faceplate-ports">
+          <div class="port" data-label="Network Security">
+            <span class="led led-on"></span>
+            <span class="jack"></span>
+            <span class="port-no">01</span>
+          </div>
+          <div class="port" data-label="Privacy &amp; Control">
+            <span class="led led-on"></span>
+            <span class="jack"></span>
+            <span class="port-no">02</span>
+          </div>
+          <div class="port" data-label="Decentralized Tech">
+            <span class="led led-on"></span>
+            <span class="jack"></span>
+            <span class="port-no">03</span>
+          </div>
+          <div class="port" data-label="System Administration">
+            <span class="led led-on"></span>
+            <span class="jack"></span>
+            <span class="port-no">04</span>
+          </div>
+          <div class="port" data-label="Custom Development">
+            <span class="led led-on"></span>
+            <span class="jack"></span>
+            <span class="port-no">05</span>
+          </div>
+          <div class="port" data-label="Always Learning">
+            <span class="led led-amber"></span>
+            <span class="jack"></span>
+            <span class="port-no">06</span>
+          </div>
+        </div>
+
+        <div class="faceplate-readout">
+          <span class="fp-hint">hover a port</span>
+          <span class="fp-out" id="fp-out">6 ports · 5 linked · 1 negotiating</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See what I've built</a>
+        <a class="btn" href="whatiuse/">Inspect the hardware</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="unit" id="about">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U1</span>
+        <span class="u-name">About</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">A technologist who prefers owning the box</h2>
+        <p class="unit-lede">
+          Passionate about networking, security, and the freedom that comes from actually
+          understanding the thing you depend on.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Who I am</h3>
+            <p>A technology enthusiast focused on networking and security. I believe in privacy,
+            decentralization, and taking control of your own digital footprint. Always learning,
+            always building.</p>
+          </article>
+          <article class="card">
+            <h3>What I do</h3>
+            <p>Run a homelab that is also a classroom: pfSense at the edge, Proxmox on a PowerEdge,
+            HAProxy in front, certs I renew myself. If it can be self-hosted, I'd rather host it.</p>
+          </article>
+          <article class="card">
+            <h3>Where it's going</h3>
+            <p>From curiosity to capability. I document the journey as I go — including the parts
+            where the cert expires and the whole thing falls over. Those are the useful parts.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS ============ -->
+  <section class="unit" id="focus">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U2</span>
+        <span class="u-name">Focus</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">Areas of focus</h2>
+        <p class="unit-lede">Six ports on the faceplate. Here's what's plugged into each.</p>
+
+        <dl class="spec-table">
+          <div class="spec-row">
+            <dt><span class="spec-idx">01</span> Network Security</dt>
+            <dd>Firewall rules, VLAN segmentation, and secure architectures — designed, then deliberately attacked.</dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">02</span> Privacy &amp; Control</dt>
+            <dd>Owning your identity and your data, instead of renting them back from someone else.</dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">03</span> Decentralized Tech</dt>
+            <dd>Distributed infrastructure and censorship-resistant hosting — what works, what's hype.</dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">04</span> System Administration</dt>
+            <dd>Hypervisors, reverse proxies, certificates, and the unglamorous work of keeping uptime.</dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">05</span> Custom Development</dt>
+            <dd>Building the tool when the tool doesn't exist. Usually small, usually sharp.</dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">06</span> Continuous Learning</dt>
+            <dd>The port that never finishes negotiating. That's the point.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="unit" id="projects">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U3</span>
+        <span class="u-name">Projects</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">Projects &amp; experiments</h2>
+        <p class="unit-lede">Things I've built, and things I'm still arguing with.</p>
+
+        <div class="grid-3">
+          <article class="card card-project">
+            <span class="card-state state-live">live</span>
+            <h3>This site</h3>
+            <p>Hand-written HTML and CSS, versioned in git, served from GitHub Pages. No CMS, no
+            plugins, no database. Previously WordPress on Flux — the rewrite removed roughly
+            everything that could break.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>Git</li><li>Static</li>
+            </ul>
+          </article>
+
+          <article class="card card-project">
+            <span class="card-state state-live">live</span>
+            <h3>The homelab</h3>
+            <p>pfSense at the edge with HAProxy reverse-proxying services behind it. Proxmox on a
+            Dell PowerEdge R620 running the workloads. Let's Encrypt certs, automated — eventually
+            correctly.</p>
+            <ul class="tags">
+              <li>pfSense</li><li>Proxmox</li><li>HAProxy</li><li>ACME</li>
+            </ul>
+          </article>
+
+          <article class="card card-project">
+            <span class="card-state state-wip">ongoing</span>
+            <h3>Privacy tooling</h3>
+            <p>Testing and documenting privacy tools, VPNs, and secure comms — what actually holds up
+            under scrutiny versus what just markets well. Findings get written up here.</p>
+            <ul class="tags">
+              <li>Privacy</li><li>Security</li><li>Research</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WRITING ============ -->
+  <section class="unit" id="writing">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U4</span>
+        <span class="u-name">Writing</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">Recent writing</h2>
+        <p class="unit-lede">Notes from the closet.</p>
+
+        <ul class="post-list">
+          <li>
+            <a href="posts/watch-it-morph.html">
+              <time datetime="2025-10">2025 · 10</time>
+              <span class="post-title">Watch it Morph</span>
+              <span class="post-desc">This site, like the skill set behind it, is under constant revision. A note on building in public.</span>
+              <span class="post-go" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="posts/why-networking-and-security.html">
+              <time datetime="2023">2023</time>
+              <span class="post-title">Why Networking and Security?</span>
+              <span class="post-desc">Why understanding the pipes matters more now than it ever has, and how I got hooked.</span>
+              <span class="post-go" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="posts/hosting-on-flux.html">
+              <time datetime="2025">2025</time>
+              <span class="post-title">Hosting on Flux</span>
+              <span class="post-desc">What decentralized hosting delivered, what it didn't, and why this site eventually left.</span>
+              <span class="post-go" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="unit unit-last" id="contact">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U5</span>
+        <span class="u-name">Contact</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">Let's connect</h2>
+        <p class="unit-lede">
+          Into networking, security, or self-hosting? I'm always up for comparing notes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:jarvis_honeycutt@dawg4037.com">Email me</a>
+          <a class="btn" href="https://github.com/dawg4037">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>dawg4037.com</span>
+    <span class="foot-mid">Static HTML · GitHub Pages · no cookies, no trackers</span>
+    <span>Palm Harbor, FL</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
