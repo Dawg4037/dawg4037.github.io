@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What I Use — dawg4037</title>
+<meta name="description" content="The hardware behind dawg4037.com: pfSense at the edge, a Dell workstation, and a PowerEdge R620 running Proxmox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/crt.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="../">
+      <span class="wordmark-name">dawg4037</span>
+      <span class="wordmark-sub">Personal Infrastructure</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../#about">About</a>
+      <a href="../#focus">Focus</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#writing">Writing</a>
+      <a href="./" aria-current="page">What I Use</a>
+      <a class="nav-cta" href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero hero-tight">
+    <div class="wrap">
+      <p class="eyebrow">Inventory &nbsp;·&nbsp; Last audit: 2026 &nbsp;·&nbsp; <span class="status-ok">3 online</span></p>
+      <h1 class="hero-title hero-title-sm">What I use</h1>
+      <p class="hero-lede">
+        Every service this site talks about runs on hardware I own, in a closet I can physically
+        walk to. Nothing here is rented. Power it on and it'll tell you itself.
+      </p>
+
+      <!-- CRT -->
+      <div class="crt" data-loop="7000">
+        <div class="screen booting">
+          <div class="screen-inner"></div>
+          <div class="mask"></div>
+          <div class="scanlines"></div>
+          <div class="roll"></div>
+          <div class="glare"></div>
+          <div class="vignette"></div>
+        </div>
+
+        <div class="chin">
+          <div class="badge">DAWG<span>·4037</span></div>
+          <div class="controls">
+            <span class="knob" title="Brightness"></span>
+            <span class="knob" title="Contrast"></span>
+            <button class="pwr" aria-label="Power">
+              <span class="led-pwr"></span> Power
+            </button>
+          </div>
+        </div>
+
+        <script type="application/json">
+[
+  ["DAWG-4037 BIOS v3.1 — Palm Harbor, FL", "dim", 0],
+  ["Copyright (c) the guy who reads the manual", "dim", 0],
+  ["", "", 0],
+  ["Performing power-on self test", "dim", 14],
+  ["  Memory ................. OK", "dim", 0],
+  ["  Storage ................ OK", "dim", 0],
+  ["  Uplink ................. OK", "dim", 0],
+  ["  Coffee ................. LOW", "warn", 0],
+  ["", "", 0],
+  ["$ hwinfo --all", "hi", 26],
+  ["", "", 0],
+  ["[ EDGE ] pfSense", "", 0],
+  ["  Intel Core i3 · 8 GB RAM", "dim", 0],
+  ["  TP-Link 8-port managed switch", "dim", 0],
+  ["  TP-Link wireless router", "dim", 0],
+  ["  HAProxy reverse proxy · ACME certs", "dim", 0],
+  ["", "", 0],
+  ["[ WORKSTATION ] Dell GS 5000", "", 0],
+  ["  Intel Core i5 · 48 GB DDR4", "dim", 0],
+  ["  2 TB storage", "dim", 0],
+  ["  NVIDIA GTX 1660 Super", "dim", 0],
+  ["", "", 0],
+  ["[ SERVER ] Dell PowerEdge R620", "", 0],
+  ["  2x Intel Xeon E5-2660 v2 @ 2.20 GHz", "dim", 0],
+  ["  64 GB DDR3 @ 1866 MHz", "dim", 0],
+  ["  6 physical disks · 1 virtual · 2.8 TB", "dim", 0],
+  ["  Proxmox VE — hypervisor", "dim", 0],
+  ["", "", 0],
+  ["3 machines online. 0 rented.", "hi", 22]
+]
+        </script>
+      </div>
+      <div class="stand"></div>
+      <div class="base"></div>
+
+    </div>
+  </section>
+
+  <!-- Text inventory: the accessible, crawlable version of the same data -->
+  <section class="unit unit-last">
+    <div class="wrap unit-inner">
+      <div class="unit-rail">
+        <span class="u-no">U1</span>
+        <span class="u-name">Inventory</span>
+      </div>
+      <div class="unit-body">
+        <h2 class="unit-title">The written version</h2>
+        <p class="unit-lede">For anyone who'd rather not wait for the tube to warm up.</p>
+
+        <dl class="spec-table">
+          <div class="spec-row">
+            <dt><span class="spec-idx">01</span> Edge</dt>
+            <dd>
+              pfSense on an older machine — Intel Core i3, 8&nbsp;GB RAM.
+              TP-Link 8-port managed switch, TP-Link wireless router.
+              HAProxy reverse-proxies everything behind it, with Let's Encrypt certs
+              renewed by the ACME package.
+            </dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">02</span> Workstation</dt>
+            <dd>
+              Dell GS 5000 — Intel Core i5, 48&nbsp;GB DDR4, 2&nbsp;TB storage,
+              NVIDIA GTX 1660 Super.
+            </dd>
+          </div>
+          <div class="spec-row">
+            <dt><span class="spec-idx">03</span> Server</dt>
+            <dd>
+              Dell PowerEdge R620 — dual Intel Xeon E5-2660 v2 @ 2.20&nbsp;GHz,
+              64&nbsp;GB DDR3 @ 1866&nbsp;MHz, 6 physical disks presented as one virtual
+              disk totalling 2.8&nbsp;TB. Runs Proxmox VE as the hypervisor.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="hero-actions">
+          <a class="btn" href="../">Back to the front page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>dawg4037.com</span>
+    <span class="foot-mid">Static HTML · GitHub Pages · no cookies, no trackers</span>
+    <span>Palm Harbor, FL</span>
+  </div>
+</footer>
+
+<script src="../js/crt.js"></script>
+</body>
+</html>
