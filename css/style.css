@@ -453,3 +453,50 @@ a { color: inherit; }
   font-size: clamp(56px, 12vw, 120px); margin: 0; letter-spacing: -.02em;
 }
 .notfound p { color: var(--ink-2); margin: 12px 0 30px; }
+
+/* --------------------------------------------------------------- build log */
+.revlog { list-style: none; margin: 0; padding: 0; }
+.rev {
+  display: grid; grid-template-columns: 132px 1fr; gap: 24px;
+  padding: 22px 0; border-top: 1px solid var(--rule);
+}
+.rev:last-child { border-bottom: 1px solid var(--rule); }
+.rev-head { display: flex; flex-direction: column; gap: 2px; padding-top: 2px; }
+.rev-no {
+  font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 15px; color: var(--ink);
+}
+.rev-head time {
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.rev-shots {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;
+  align-items: start;
+}
+.shot { margin: 0; }
+.shot a {
+  display: block; background: var(--chassis); border: 1px solid var(--rule-hard);
+  border-radius: 3px; overflow: hidden; box-shadow: var(--shadow);
+}
+.shot img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.shot a:hover img { transform: scale(1.03); opacity: .92; }
+.shot figcaption { margin-top: 8px; font-size: 13.5px; line-height: 1.5; color: var(--ink-2); }
+
+/* project card photo */
+.card-photo {
+  display: block; margin: -30px -24px 18px; border-bottom: 1px solid var(--rule);
+  border-radius: 3px 3px 0 0; overflow: hidden; background: var(--chassis);
+}
+.card-photo img { display: block; width: 100%; height: 200px; object-fit: cover; }
+.card-project:has(.card-photo) .card-state {
+  background: var(--paper); padding: 3px 8px; border-radius: 2px; z-index: 1;
+}
+
+@media (max-width: 860px) {
+  .rev { grid-template-columns: 1fr; gap: 10px; }
+  .rev-head { flex-direction: row; gap: 10px; align-items: baseline; }
+  .rev-shots { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
