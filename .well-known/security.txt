@@ -1,0 +1,4 @@
+Contact: mailto:jarvis_honeycutt@dawg4037.com
+Expires: 2027-10-31T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://dawg4037.com/.well-known/security.txt
